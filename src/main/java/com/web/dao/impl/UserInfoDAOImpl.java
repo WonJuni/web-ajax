@@ -45,14 +45,10 @@ public class UserInfoDAOImpl implements UserInfoDAO {
 			UserInfoVO user = userInfoDAO.selectUserInfo(session, 12);
 			System.out.println("Select One : " + user);
 			
-			user.setUiName("Change");
+			user.setUiName("Change123");
 			int result = userInfoDAO.updateUserInfo(session, user);
 			
-			result = userInfoDAO.deleteUserInfo(session, 17);
-			
-	//			user.setUiId("dao");
-////			int result = userInfoDAO.insertUserinfo(session, user);
-////			System.out.println("insert : " + result);
+
 			session.commit();
 			
 			
